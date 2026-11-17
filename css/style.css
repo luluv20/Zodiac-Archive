@@ -219,6 +219,10 @@ p { color: var(--muted); }
 .birthday-content > div > p:last-child { max-width: 400px; }
 .birthday-form label, .sign-input label { display: block; margin-bottom: 10px; color: var(--accent); font-size: 9px; letter-spacing: .16em; font-weight: 700; }
 .birthday-input-row { display: flex; gap: 10px; }
+/* Keep the date field inside its box on phones (mobile browsers give date inputs their own intrinsic width) */
+.birthday-content > *, .birthday-form, .birthday-input-row { min-width: 0; }
+input[type="date"] { display: block; max-width: 100%; -webkit-appearance: none; appearance: none; }
+input[type="date"]::-webkit-date-and-time-value { text-align: left; min-width: 0; }
 input[type="date"], select {
   width: 100%;
   min-width: 0;
