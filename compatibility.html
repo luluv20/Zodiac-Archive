@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore zodiac compatibility through the four astrological elements.">
+  <title>Compatibility | The Zodiac Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="star-background" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">THE ZODIAC ARCHIVE</a>
+    <nav aria-label="Main navigation"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="zodiac.html">Zodiac Signs</a></li>
+      <li><a href="compatibility.html" class="active">Compatibility</a></li>
+    </ul></nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme"><span id="theme-icon" aria-hidden="true">☼</span></button>
+  </header>
+
+  <main>
+    <section class="page-hero section-container">
+      <p class="eyebrow">THE ART OF CONNECTION / 001</p>
+      <h1>Written in<br><span>the Stars.</span></h1>
+      <p class="page-intro">Explore traditional astrological connections through the four elements. Choose two signs to discover how their elements are often interpreted together.</p>
+      <img src="images/hero/elements.svg" alt="Decorative artwork of four overlapping circles representing fire, earth, air and water" class="page-hero-visual" width="420" height="420">
+    </section>
+
+    <section class="calculator-section section-container">
+      <div class="section-label">01 / THE COMPATIBILITY CALCULATOR</div>
+      <div class="calculator-panel">
+        <p class="eyebrow">A COSMIC COMBINATION</p>
+        <h2>Explore your connection</h2>
+        <div class="sign-selection">
+          <div class="sign-input">
+            <label for="sign1">FIRST SIGN</label>
+            <select id="sign1">
+              <option value="">Choose a sign</option>
+              <option>Aries</option><option>Taurus</option><option>Gemini</option><option>Cancer</option>
+              <option>Leo</option><option>Virgo</option><option>Libra</option><option>Scorpio</option>
+              <option>Sagittarius</option><option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+            </select>
+          </div>
+          <span class="connection-symbol" aria-hidden="true">✧</span>
+          <div class="sign-input">
+            <label for="sign2">SECOND SIGN</label>
+            <select id="sign2">
+              <option value="">Choose a sign</option>
+              <option>Aries</option><option>Taurus</option><option>Gemini</option><option>Cancer</option>
+              <option>Leo</option><option>Virgo</option><option>Libra</option><option>Scorpio</option>
+              <option>Sagittarius</option><option>Capricorn</option><option>Aquarius</option><option>Pisces</option>
+            </select>
+          </div>
+        </div>
+        <button id="calculate-btn" class="button calculate-button" type="button">Discover your compatibility <span>↗</span></button>
+        <div id="compatibility-result" class="compatibility-result" aria-live="polite">
+          <p class="result-placeholder">Your cosmic reading will appear here.</p>
+        </div>
+        <p class="disclaimer">Astrological compatibility is a traditional interpretive framework and is intended here for entertainment and exploration, not as a scientific assessment of relationships.</p>
+      </div>
+    </section>
+
+    <section class="elements-section section-container">
+      <div class="section-label">02 / THE FOUR ELEMENTS</div>
+      <div class="section-heading">
+        <div><h2>Four ways of being</h2><p>In astrology, each zodiac sign belongs to one of four elements, each representing a different style of expression.</p></div>
+      </div>
+      <div class="element-grid">
+        <article class="element-card"><span class="element-number">01</span><img src="images/elements/fire.svg" alt="Fire element illustration: a golden flame inside an upward triangle" class="element-art" width="300" height="300" loading="lazy"><h3>Fire</h3><p>Aries · Leo · Sagittarius</p><p>Associated with energy, initiative, enthusiasm, and inspiration.</p></article>
+        <article class="element-card"><span class="element-number">02</span><img src="images/elements/earth.svg" alt="Earth element illustration: green mountains and crystals inside a downward triangle" class="element-art" width="300" height="300" loading="lazy"><h3>Earth</h3><p>Taurus · Virgo · Capricorn</p><p>Associated with stability, practicality, patience, and structure.</p></article>
+        <article class="element-card"><span class="element-number">03</span><img src="images/elements/air.svg" alt="Air element illustration: swirling wind lines and clouds inside an upward triangle" class="element-art" width="300" height="300" loading="lazy"><h3>Air</h3><p>Gemini · Libra · Aquarius</p><p>Associated with communication, ideas, curiosity, and connection.</p></article>
+        <article class="element-card"><span class="element-number">04</span><img src="images/elements/water.svg" alt="Water element illustration: layered waves, a droplet and a crescent moon inside a downward triangle" class="element-art" width="300" height="300" loading="lazy"><h3>Water</h3><p>Cancer · Scorpio · Pisces</p><p>Associated with emotion, intuition, sensitivity, and imagination.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="footer-logo">THE ZODIAC ARCHIVE</a>
+    <p>An exploration of the twelve signs.</p>
+    <span>© 2026 THE ZODIAC ARCHIVE</span>
+  </footer>
+</body>
+</html>

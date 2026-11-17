@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore the twelve zodiac signs, astrology, and cosmic compatibility.">
+  <title>The Zodiac Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="star-background" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">THE ZODIAC ARCHIVE</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="zodiac.html">Zodiac Signs</a></li>
+        <li><a href="compatibility.html">Compatibility</a></li>
+      </ul>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+      <span id="theme-icon" aria-hidden="true">☼</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">AN INTRODUCTION TO ASTROLOGY</p>
+        <h1>Written in<br><span>the Stars.</span></h1>
+        <p class="hero-description">Explore the twelve zodiac signs and discover the celestial patterns that have shaped astrology for centuries.</p>
+        <a href="#discover" class="button">Explore the Signs <span>↗</span></a>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="orbit orbit-one"><span class="orbit-body" style="left:85.36%;top:14.64%"><img src="images/elements/fire-icon.svg" alt="Illustration of the Fire element" width="44" height="44"></span><span class="orbit-body" style="left:85.36%;top:85.36%"><img src="images/elements/earth-icon.svg" alt="Illustration of the Earth element" width="44" height="44"></span><span class="orbit-body" style="left:14.64%;top:85.36%"><img src="images/elements/air-icon.svg" alt="Illustration of the Air element" width="44" height="44"></span><span class="orbit-body" style="left:14.64%;top:14.64%"><img src="images/elements/water-icon.svg" alt="Illustration of the Water element" width="44" height="44"></span></div>
+        <div class="orbit orbit-two"><span class="orbit-body" style="left:67.10%;top:3.02%"><img src="images/planets/mars.svg" alt="Illustration of Mars" width="44" height="44"></span><span class="orbit-body" style="left:99.97%;top:51.74%"><img src="images/planets/venus.svg" alt="Illustration of Venus" width="44" height="44"></span><span class="orbit-body" style="left:63.78%;top:98.06%"><img src="images/planets/mercury.svg" alt="Illustration of Mercury" width="44" height="44"></span><span class="orbit-body" style="left:8.55%;top:77.96%"><img src="images/planets/jupiter.svg" alt="Illustration of Jupiter" width="44" height="44"></span><span class="orbit-body" style="left:10.60%;top:19.22%"><img src="images/planets/saturn.svg" alt="Illustration of Saturn" width="44" height="44"></span></div>
+        <div class="orbit orbit-three"><span class="orbit-body" style="left:50.00%;top:0.00%"><img src="images/planets/sun.svg" alt="Illustration of Sun" width="44" height="44"></span><span class="orbit-body" style="left:50.00%;top:100.00%"><img src="images/planets/moon.svg" alt="Illustration of Moon" width="44" height="44"></span></div>
+        <div class="orbit-center">✦</div>
+        <span class="orbit-star star-one">✧</span><span class="orbit-star star-two">✦</span><span class="orbit-star star-three">✧</span>
+      </div>
+      <span class="hero-caption">THE COSMOS / 12 SIGNS / 4 ELEMENTS</span>
+    </section>
+
+    <section class="intro section-container reveal">
+      <div class="section-label">01 / THE CELESTIAL PERSPECTIVE</div>
+      <div class="intro-content">
+        <h2>A Universe of<br>Possibilities</h2>
+        <p>Astrology connects the movements of celestial bodies with the characteristics and experiences of life. Each zodiac sign carries its own symbolism, element, and unique personality traits.</p>
+      </div>
+  <img src="images/hero/armillary.svg" alt="Illustration of an armillary sphere, an astronomical instrument of nested golden rings around a small globe" class="intro-art" width="360" height="360" loading="lazy">
+    </section>
+
+    <section class="birthday-section section-container reveal">
+      <div class="section-label">02 / FIND YOUR PLACE IN THE COSMOS</div>
+      <div class="birthday-content">
+        <div>
+          <p class="eyebrow">YOUR CELESTIAL IDENTITY</p>
+          <h2>When were you born?</h2>
+          <p>Enter your birthday to discover which zodiac sign corresponds to your birth date.</p>
+        </div>
+        <form id="birthday-form" class="birthday-form">
+          <label for="birthday">YOUR BIRTH DATE</label>
+          <div class="birthday-input-row">
+            <input type="date" id="birthday" required>
+            <button type="submit" class="button">Discover <span>↗</span></button>
+          </div>
+          <div id="birthday-result" class="birthday-result" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="daily-section section-container reveal">
+      <div class="section-label">03 / A MOMENT OF REFLECTION</div>
+      <div class="daily-card">
+        <span class="daily-symbol" aria-hidden="true">✧</span>
+        <div>
+          <p class="eyebrow">YOUR DAILY COSMIC INSIGHT</p>
+          <h2 id="daily-title">A thought among the stars</h2>
+          <p id="daily-message">The universe is always moving. Take a moment to notice the possibilities around you.</p>
+          <span id="daily-number" class="daily-number">INSIGHT 01</span>
+        </div>
+        <button id="next-insight" class="text-button" type="button">Another insight ↗</button>
+      </div>
+    </section>
+
+    <section class="featured-signs section-container" id="discover">
+      <div class="section-heading reveal">
+        <div>
+          <p class="eyebrow">04 / THE TWELVE SIGNS</p>
+          <h2>Discover Your Sign</h2>
+          <p>Explore the twelve signs of the zodiac, each associated with a different period of the year. Select a sign to learn more.</p>
+        </div>
+      </div>
+      <div class="filter-controls" aria-label="Filter zodiac signs">
+        <button class="filter-button active" data-filter="all" type="button" aria-pressed="true">All Signs</button>
+        <button class="filter-button" data-filter="Fire" type="button" aria-pressed="false">Fire</button>
+        <button class="filter-button" data-filter="Earth" type="button" aria-pressed="false">Earth</button>
+        <button class="filter-button" data-filter="Air" type="button" aria-pressed="false">Air</button>
+        <button class="filter-button" data-filter="Water" type="button" aria-pressed="false">Water</button>
+      </div>
+      <div class="zodiac-grid">
+        <a href="zodiac.html#aries" class="zodiac-card" data-element="Fire"><img src="images/icons8-aries-50.png" alt="Aries zodiac symbol" class="zodiac-icon"><h3>Aries</h3><p>March 21 – April 19</p><span class="element-label">FIRE</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#taurus" class="zodiac-card" data-element="Earth"><img src="images/icons8-taurus-50.png" alt="Taurus zodiac symbol" class="zodiac-icon"><h3>Taurus</h3><p>April 20 – May 20</p><span class="element-label">EARTH</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#gemini" class="zodiac-card" data-element="Air"><img src="images/icons8-gemini-50.png" alt="Gemini zodiac symbol" class="zodiac-icon"><h3>Gemini</h3><p>May 21 – June 20</p><span class="element-label">AIR</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#cancer" class="zodiac-card" data-element="Water"><img src="images/icons8-cancer-50.png" alt="Cancer zodiac symbol" class="zodiac-icon"><h3>Cancer</h3><p>June 21 – July 22</p><span class="element-label">WATER</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#leo" class="zodiac-card" data-element="Fire"><img src="images/icons8-leo-50.png" alt="Leo zodiac symbol" class="zodiac-icon"><h3>Leo</h3><p>July 23 – August 22</p><span class="element-label">FIRE</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#virgo" class="zodiac-card" data-element="Earth"><img src="images/icons8-virgo-50.png" alt="Virgo zodiac symbol" class="zodiac-icon"><h3>Virgo</h3><p>August 23 – September 22</p><span class="element-label">EARTH</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#libra" class="zodiac-card" data-element="Air"><img src="images/icons8-libra-50.png" alt="Libra zodiac symbol" class="zodiac-icon"><h3>Libra</h3><p>September 23 – October 22</p><span class="element-label">AIR</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#scorpio" class="zodiac-card" data-element="Water"><img src="images/icons8-scorpio-50.png" alt="Scorpio zodiac symbol" class="zodiac-icon"><h3>Scorpio</h3><p>October 23 – November 21</p><span class="element-label">WATER</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#sagittarius" class="zodiac-card" data-element="Fire"><img src="images/icons8-sagittarius-50.png" alt="Sagittarius zodiac symbol" class="zodiac-icon"><h3>Sagittarius</h3><p>November 22 – December 21</p><span class="element-label">FIRE</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#capricorn" class="zodiac-card" data-element="Earth"><img src="images/icons8-capricorn-50.png" alt="Capricorn zodiac symbol" class="zodiac-icon"><h3>Capricorn</h3><p>December 22 – January 19</p><span class="element-label">EARTH</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#aquarius" class="zodiac-card" data-element="Air"><img src="images/icons8-aquarius-50.png" alt="Aquarius zodiac symbol" class="zodiac-icon"><h3>Aquarius</h3><p>January 20 – February 18</p><span class="element-label">AIR</span><span class="card-arrow">↗</span></a>
+        <a href="zodiac.html#pisces" class="zodiac-card" data-element="Water"><img src="images/icons8-pisces-50.png" alt="Pisces zodiac symbol" class="zodiac-icon"><h3>Pisces</h3><p>February 19 – March 20</p><span class="element-label">WATER</span><span class="card-arrow">↗</span></a>
+      </div>
+    </section>
+
+    <section class="compatibility-preview">
+      <div class="section-container compatibility-preview-content reveal">
+        <div>
+          <p class="eyebrow">05 / COSMIC CONNECTIONS</p>
+          <h2>Written in the Stars</h2>
+          <p>Discover how the elements of fire, earth, air, and water influence zodiac relationships. Explore the connections between signs with the compatibility calculator.</p>
+          <a href="compatibility.html" class="button">Explore Compatibility <span>↗</span></a>
+        </div>
+        <div class="preview-symbol" aria-hidden="true">✧</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="footer-logo">THE ZODIAC ARCHIVE</a>
+    <p>An exploration of the twelve signs.</p>
+    <span>© 2026 THE ZODIAC ARCHIVE</span>
+  </footer>
+</body>
+</html>

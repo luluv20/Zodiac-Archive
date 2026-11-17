@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about all twelve zodiac signs, their elements, qualities, and symbolism.">
+  <title>The Twelve Signs | The Zodiac Archive</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <div class="star-background" aria-hidden="true"></div>
+  <header class="site-header">
+    <a href="index.html" class="site-logo">THE ZODIAC ARCHIVE</a>
+    <nav aria-label="Main navigation"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="zodiac.html" class="active">Zodiac Signs</a></li>
+      <li><a href="compatibility.html">Compatibility</a></li>
+    </ul></nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme"><span id="theme-icon" aria-hidden="true">☼</span></button>
+  </header>
+
+  <main>
+    <section class="page-hero section-container">
+      <p class="eyebrow">THE CELESTIAL DIRECTORY / 001—012</p>
+      <h1>The Twelve<br><span>Signs.</span></h1>
+      <p class="page-intro">Every sign carries a distinct place in the zodiac. Explore their dates, elements, ruling planets, and traditional astrological associations.</p>
+      <div class="page-hero-visual"><img src="images/hero/zodiac-wheel.svg" alt="Decorative zodiac wheel with twelve sections numbered in Roman numerals" class="page-hero-spin" width="420" height="420"></div>
+    </section>
+
+    <section class="deck-section section-container" aria-labelledby="deck-title">
+      <div class="section-label">THE DECK / DRAW A SIGN</div>
+      <div class="deck-layout">
+        <div class="deck-stage">
+          <div class="deck-stack">
+            <div class="tarot-card" id="tarot-card">
+              <div class="tarot-inner" id="tarot-inner">
+                <img src="images/cards/card-back.svg" alt="Face-down tarot-style card decorated with stars" class="tarot-face tarot-back" width="300" height="460">
+                <img src="images/cards/aries.svg" alt="" class="tarot-face tarot-front" id="tarot-front" width="300" height="460">
+              </div>
+            </div>
+          </div>
+          <p class="deck-count" id="deck-count">12 CARDS / FACE DOWN</p>
+        </div>
+        <div class="deck-panel">
+          <p class="eyebrow">A DECK OF TWELVE</p>
+          <h2 id="deck-title">Draw a sign</h2>
+          <p class="deck-intro">Shuffle the deck, then draw a card to meet a zodiac sign. Each card is illustrated with the sign's traditional constellation.</p>
+          <div class="deck-reading" id="deck-reading" aria-live="polite">
+            <p class="result-placeholder">Your card will be revealed here.</p>
+          </div>
+          <div class="deck-controls">
+            <button class="button" id="deck-draw" type="button">Draw a card <span>↗</span></button>
+            <button class="button" id="deck-prev" type="button" disabled>Previous</button>
+            <button class="text-button" id="deck-shuffle" type="button">Shuffle the deck ↻</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="zodiac-directory section-container">
+      <div class="section-label">THE SIGNS / IN ORDER</div>
+
+      <article class="sign-detail reveal" id="aries">
+        <div class="sign-topline"><span>01 / FIRE</span><span>THE RAM</span></div>
+        <div class="sign-main">
+          <img src="images/icons8-aries-50.png" alt="Aries zodiac symbol" class="sign-large-icon">
+          <div><p class="eyebrow">MARCH 21 – APRIL 19</p><h2>Aries</h2><p class="sign-tagline">The Initiator</p></div>
+        </div>
+        <div class="sign-information">
+          <p>Aries is the first sign of the zodiac and is traditionally associated with beginnings, initiative, and action. Its fire element is linked with enthusiasm, courage, and a forward-moving spirit.</p>
+          <div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/fire-icon.svg" alt="Illustration of the Fire element" class="planet-icon" width="34" height="34" loading="lazy">Fire</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/mars.svg" alt="Illustration of Mars" class="planet-icon" width="34" height="34" loading="lazy">Mars</strong></div><div><span>MODALITY</span><strong>Cardinal</strong></div></div>
+          <details class="fact-details"><summary>Explore Aries traits</summary><p><strong>Often associated with:</strong> confidence, energy, independence, and directness.</p><p><strong>Growth areas:</strong> patience, pacing, and considering other perspectives.</p></details>
+        </div>
+      </article>
+
+      <article class="sign-detail reveal" id="taurus">
+        <div class="sign-topline"><span>02 / EARTH</span><span>THE BULL</span></div>
+        <div class="sign-main"><img src="images/icons8-taurus-50.png" alt="Taurus zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">APRIL 20 – MAY 20</p><h2>Taurus</h2><p class="sign-tagline">The Grounded One</p></div></div>
+        <div class="sign-information"><p>Taurus is an earth sign traditionally connected with stability, patience, and the sensory world. Its symbolism emphasizes building lasting foundations and appreciating comfort and beauty.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/earth-icon.svg" alt="Illustration of the Earth element" class="planet-icon" width="34" height="34" loading="lazy">Earth</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/venus.svg" alt="Illustration of Venus" class="planet-icon" width="34" height="34" loading="lazy">Venus</strong></div><div><span>MODALITY</span><strong>Fixed</strong></div></div><details class="fact-details"><summary>Explore Taurus traits</summary><p><strong>Often associated with:</strong> reliability, loyalty, persistence, and practicality.</p><p><strong>Growth areas:</strong> flexibility, adapting to change, and letting go of routines.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="gemini">
+        <div class="sign-topline"><span>03 / AIR</span><span>THE TWINS</span></div>
+        <div class="sign-main"><img src="images/icons8-gemini-50.png" alt="Gemini zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">MAY 21 – JUNE 20</p><h2>Gemini</h2><p class="sign-tagline">The Communicator</p></div></div>
+        <div class="sign-information"><p>Gemini is an air sign associated with curiosity, communication, and the exchange of ideas. Its symbolism reflects duality, adaptability, and an interest in learning from different perspectives.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/air-icon.svg" alt="Illustration of the Air element" class="planet-icon" width="34" height="34" loading="lazy">Air</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/mercury.svg" alt="Illustration of Mercury" class="planet-icon" width="34" height="34" loading="lazy">Mercury</strong></div><div><span>MODALITY</span><strong>Mutable</strong></div></div><details class="fact-details"><summary>Explore Gemini traits</summary><p><strong>Often associated with:</strong> curiosity, wit, versatility, and sociability.</p><p><strong>Growth areas:</strong> follow-through, focus, and slowing down to reflect.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="cancer">
+        <div class="sign-topline"><span>04 / WATER</span><span>THE CRAB</span></div>
+        <div class="sign-main"><img src="images/icons8-cancer-50.png" alt="Cancer zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">JUNE 21 – JULY 22</p><h2>Cancer</h2><p class="sign-tagline">The Nurturer</p></div></div>
+        <div class="sign-information"><p>Cancer is a water sign traditionally associated with emotional awareness, home, and belonging. Its symbolism emphasizes care, memory, and the importance of creating a sense of security.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/water-icon.svg" alt="Illustration of the Water element" class="planet-icon" width="34" height="34" loading="lazy">Water</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/moon.svg" alt="Illustration of Moon" class="planet-icon" width="34" height="34" loading="lazy">Moon</strong></div><div><span>MODALITY</span><strong>Cardinal</strong></div></div><details class="fact-details"><summary>Explore Cancer traits</summary><p><strong>Often associated with:</strong> empathy, protectiveness, intuition, and devotion.</p><p><strong>Growth areas:</strong> boundaries, openness, and navigating emotional change.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="leo">
+        <div class="sign-topline"><span>05 / FIRE</span><span>THE LION</span></div>
+        <div class="sign-main"><img src="images/icons8-leo-50.png" alt="Leo zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">JULY 23 – AUGUST 22</p><h2>Leo</h2><p class="sign-tagline">The Creator</p></div></div>
+        <div class="sign-information"><p>Leo is a fire sign associated with creativity, self-expression, and warmth. Its symbolism draws on the lion and the Sun, reflecting visibility, generosity, and a desire to create and share.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/fire-icon.svg" alt="Illustration of the Fire element" class="planet-icon" width="34" height="34" loading="lazy">Fire</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/sun.svg" alt="Illustration of Sun" class="planet-icon" width="34" height="34" loading="lazy">Sun</strong></div><div><span>MODALITY</span><strong>Fixed</strong></div></div><details class="fact-details"><summary>Explore Leo traits</summary><p><strong>Often associated with:</strong> confidence, generosity, creativity, and enthusiasm.</p><p><strong>Growth areas:</strong> listening, humility, and sharing the spotlight.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="virgo">
+        <div class="sign-topline"><span>06 / EARTH</span><span>THE MAIDEN</span></div>
+        <div class="sign-main"><img src="images/icons8-virgo-50.png" alt="Virgo zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">AUGUST 23 – SEPTEMBER 22</p><h2>Virgo</h2><p class="sign-tagline">The Analyst</p></div></div>
+        <div class="sign-information"><p>Virgo is an earth sign traditionally linked with discernment, service, and careful attention to detail. Its symbolism emphasizes practical problem-solving and the pursuit of thoughtful improvement.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/earth-icon.svg" alt="Illustration of the Earth element" class="planet-icon" width="34" height="34" loading="lazy">Earth</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/mercury.svg" alt="Illustration of Mercury" class="planet-icon" width="34" height="34" loading="lazy">Mercury</strong></div><div><span>MODALITY</span><strong>Mutable</strong></div></div><details class="fact-details"><summary>Explore Virgo traits</summary><p><strong>Often associated with:</strong> precision, helpfulness, organization, and thoughtfulness.</p><p><strong>Growth areas:</strong> perfectionism, self-criticism, and accepting uncertainty.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="libra">
+        <div class="sign-topline"><span>07 / AIR</span><span>THE SCALES</span></div>
+        <div class="sign-main"><img src="images/icons8-libra-50.png" alt="Libra zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">SEPTEMBER 23 – OCTOBER 22</p><h2>Libra</h2><p class="sign-tagline">The Harmonizer</p></div></div>
+        <div class="sign-information"><p>Libra is an air sign associated with balance, relationships, and aesthetics. Its scales symbolize fairness and the ongoing effort to understand different sides of a situation.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/air-icon.svg" alt="Illustration of the Air element" class="planet-icon" width="34" height="34" loading="lazy">Air</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/venus.svg" alt="Illustration of Venus" class="planet-icon" width="34" height="34" loading="lazy">Venus</strong></div><div><span>MODALITY</span><strong>Cardinal</strong></div></div><details class="fact-details"><summary>Explore Libra traits</summary><p><strong>Often associated with:</strong> diplomacy, cooperation, charm, and a sense of fairness.</p><p><strong>Growth areas:</strong> decisiveness, boundaries, and addressing conflict directly.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="scorpio">
+        <div class="sign-topline"><span>08 / WATER</span><span>THE SCORPION</span></div>
+        <div class="sign-main"><img src="images/icons8-scorpio-50.png" alt="Scorpio zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">OCTOBER 23 – NOVEMBER 21</p><h2>Scorpio</h2><p class="sign-tagline">The Investigator</p></div></div>
+        <div class="sign-information"><p>Scorpio is a water sign traditionally connected with depth, transformation, and emotional intensity. Its symbolism reflects persistence, privacy, and a willingness to explore what lies beneath the surface.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/water-icon.svg" alt="Illustration of the Water element" class="planet-icon" width="34" height="34" loading="lazy">Water</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/mars.svg" alt="Illustration of Mars" class="planet-icon" width="34" height="34" loading="lazy"><img src="images/planets/pluto.svg" alt="Illustration of Pluto" class="planet-icon" width="34" height="34" loading="lazy">Mars / Pluto</strong></div><div><span>MODALITY</span><strong>Fixed</strong></div></div><details class="fact-details"><summary>Explore Scorpio traits</summary><p><strong>Often associated with:</strong> determination, insight, loyalty, and resourcefulness.</p><p><strong>Growth areas:</strong> trust, openness, and releasing control.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="sagittarius">
+        <div class="sign-topline"><span>09 / FIRE</span><span>THE ARCHER</span></div>
+        <div class="sign-main"><img src="images/icons8-sagittarius-50.png" alt="Sagittarius zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">NOVEMBER 22 – DECEMBER 21</p><h2>Sagittarius</h2><p class="sign-tagline">The Explorer</p></div></div>
+        <div class="sign-information"><p>Sagittarius is a fire sign associated with exploration, philosophy, and the search for meaning. Its archer symbolism points toward distant horizons, discovery, and an expansive outlook.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/fire-icon.svg" alt="Illustration of the Fire element" class="planet-icon" width="34" height="34" loading="lazy">Fire</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/jupiter.svg" alt="Illustration of Jupiter" class="planet-icon" width="34" height="34" loading="lazy">Jupiter</strong></div><div><span>MODALITY</span><strong>Mutable</strong></div></div><details class="fact-details"><summary>Explore Sagittarius traits</summary><p><strong>Often associated with:</strong> optimism, independence, curiosity, and adventurousness.</p><p><strong>Growth areas:</strong> consistency, tact, and attending to details.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="capricorn">
+        <div class="sign-topline"><span>10 / EARTH</span><span>THE SEA-GOAT</span></div>
+        <div class="sign-main"><img src="images/icons8-capricorn-50.png" alt="Capricorn zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">DECEMBER 22 – JANUARY 19</p><h2>Capricorn</h2><p class="sign-tagline">The Architect</p></div></div>
+        <div class="sign-information"><p>Capricorn is an earth sign traditionally associated with ambition, responsibility, and long-term effort. Its symbolism emphasizes discipline, structure, and the steady pursuit of meaningful goals.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/earth-icon.svg" alt="Illustration of the Earth element" class="planet-icon" width="34" height="34" loading="lazy">Earth</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/saturn.svg" alt="Illustration of Saturn" class="planet-icon" width="34" height="34" loading="lazy">Saturn</strong></div><div><span>MODALITY</span><strong>Cardinal</strong></div></div><details class="fact-details"><summary>Explore Capricorn traits</summary><p><strong>Often associated with:</strong> discipline, patience, practicality, and determination.</p><p><strong>Growth areas:</strong> flexibility, rest, and making room for spontaneity.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="aquarius">
+        <div class="sign-topline"><span>11 / AIR</span><span>THE WATER-BEARER</span></div>
+        <div class="sign-main"><img src="images/icons8-aquarius-50.png" alt="Aquarius zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">JANUARY 20 – FEBRUARY 18</p><h2>Aquarius</h2><p class="sign-tagline">The Visionary</p></div></div>
+        <div class="sign-information"><p>Aquarius is an air sign associated with innovation, independence, and collective ideas. The water-bearer symbolizes the sharing of knowledge and a perspective that looks toward the future.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/air-icon.svg" alt="Illustration of the Air element" class="planet-icon" width="34" height="34" loading="lazy">Air</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/saturn.svg" alt="Illustration of Saturn" class="planet-icon" width="34" height="34" loading="lazy"><img src="images/planets/uranus.svg" alt="Illustration of Uranus" class="planet-icon" width="34" height="34" loading="lazy">Saturn / Uranus</strong></div><div><span>MODALITY</span><strong>Fixed</strong></div></div><details class="fact-details"><summary>Explore Aquarius traits</summary><p><strong>Often associated with:</strong> originality, idealism, independence, and inventiveness.</p><p><strong>Growth areas:</strong> emotional expression, collaboration, and staying grounded.</p></details></div>
+      </article>
+
+      <article class="sign-detail reveal" id="pisces">
+        <div class="sign-topline"><span>12 / WATER</span><span>THE FISH</span></div>
+        <div class="sign-main"><img src="images/icons8-pisces-50.png" alt="Pisces zodiac symbol" class="sign-large-icon"><div><p class="eyebrow">FEBRUARY 19 – MARCH 20</p><h2>Pisces</h2><p class="sign-tagline">The Dreamer</p></div></div>
+        <div class="sign-information"><p>Pisces is a water sign traditionally connected with imagination, compassion, and intuition. Its two fish symbolize the meeting of different currents and the fluid boundary between inner and outer worlds.</p><div class="sign-facts"><div><span>ELEMENT</span><strong class="planet-line"><img src="images/elements/water-icon.svg" alt="Illustration of the Water element" class="planet-icon" width="34" height="34" loading="lazy">Water</strong></div><div><span>RULING PLANET</span><strong class="planet-line"><img src="images/planets/jupiter.svg" alt="Illustration of Jupiter" class="planet-icon" width="34" height="34" loading="lazy"><img src="images/planets/neptune.svg" alt="Illustration of Neptune" class="planet-icon" width="34" height="34" loading="lazy">Jupiter / Neptune</strong></div><div><span>MODALITY</span><strong>Mutable</strong></div></div><details class="fact-details"><summary>Explore Pisces traits</summary><p><strong>Often associated with:</strong> empathy, imagination, sensitivity, and creativity.</p><p><strong>Growth areas:</strong> boundaries, practical planning, and distinguishing intuition from assumption.</p></details></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a href="index.html" class="footer-logo">THE ZODIAC ARCHIVE</a>
+    <p>An exploration of the twelve signs.</p>
+    <span>© 2026 THE ZODIAC ARCHIVE</span>
+  </footer>
+</body>
+</html>

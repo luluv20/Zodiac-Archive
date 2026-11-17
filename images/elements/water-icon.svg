@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 20 240 240" role="img" aria-labelledby="t"><title id="t">Illustration of the Water element</title>
+<defs><radialGradient id="bg" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#2b2f3d"/><stop offset="1" stop-color="#13141a"/></radialGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#8aa4ee" stop-opacity=".38"/><stop offset="1" stop-color="#8aa4ee" stop-opacity="0"/></radialGradient>
+<clipPath id="ring"><circle cx="150" cy="140" r="96"/></clipPath></defs>
+<circle cx="150" cy="140" r="118" fill="url(#bg)" stroke="#c5ad83" stroke-width="4"/>
+<circle cx="150" cy="140" r="108" fill="url(#glow)"/>
+<circle cx="150" cy="140" r="106" fill="none" stroke="#8aa4ee" stroke-width="1.6" opacity=".7"/>
+
+<path d="M78,100 H222 L150,224Z" fill="none" stroke="#c5ad83" stroke-width="1.2" opacity=".75"/>
+<g clip-path="url(#ring)">
+<path d="M40,170 C62,152 84,152 106,170 S150,188 172,170 S216,152 238,170 S268,184 270,170 V250 H40Z" fill="#5f7fd8" opacity=".9"/>
+<path d="M40,192 C62,174 84,174 106,192 S150,210 172,192 S216,174 238,192 S268,206 270,192 V250 H40Z" fill="#4560b8"/>
+<path d="M40,214 C62,198 84,198 106,214 S150,230 172,214 S216,198 238,214 S268,228 270,214 V250 H40Z" fill="#2f4390"/>
+<path d="M60,170 C82,154 104,154 126,170" fill="none" stroke="#dce6ff" stroke-width="1.6" opacity=".8"/>
+<path d="M170,170 C192,154 214,154 236,170" fill="none" stroke="#dce6ff" stroke-width="1.6" opacity=".8"/>
+</g>
+<path d="M150,64 C150,64 120,104 120,126 C120,144 133,156 150,156 C167,156 180,144 180,126 C180,104 150,64 150,64Z" fill="#8aa4ee"/>
+<path d="M138,118 C136,130 140,142 148,146" fill="none" stroke="#e6edff" stroke-width="3" stroke-linecap="round" opacity=".85"/>
+<path d="M214,64 A15,15 0 1 0 224,92 A12,12 0 1 1 214,64Z" fill="#f4efe3" opacity=".9"/>
+<path d="M80,90 Q81.68,94.32 86,96 Q81.68,97.68 80,102 Q78.32,97.68 74,96 Q78.32,94.32 80,90Z" fill="#f4efe3"/><path d="M232,114 Q233.12,116.88 236,118 Q233.12,119.12 232,122 Q230.88,119.12 228,118 Q230.88,116.88 232,114Z" fill="#f4efe3"/><path d="M66,128 Q67.12,130.88 70,132 Q67.12,133.12 66,136 Q64.88,133.12 62,132 Q64.88,130.88 66,128Z" fill="#f4efe3"/>
+
+</svg>

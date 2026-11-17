@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 20 240 240" role="img" aria-labelledby="t"><title id="t">Illustration of the Fire element</title>
+<defs><radialGradient id="bg" cx="50%" cy="42%" r="75%"><stop offset="0" stop-color="#2b2f3d"/><stop offset="1" stop-color="#13141a"/></radialGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#e0956a" stop-opacity=".38"/><stop offset="1" stop-color="#e0956a" stop-opacity="0"/></radialGradient>
+<clipPath id="ring"><circle cx="150" cy="140" r="96"/></clipPath></defs>
+<circle cx="150" cy="140" r="118" fill="url(#bg)" stroke="#c5ad83" stroke-width="4"/>
+<circle cx="150" cy="140" r="108" fill="url(#glow)"/>
+<circle cx="150" cy="140" r="106" fill="none" stroke="#e0956a" stroke-width="1.6" opacity=".7"/>
+
+<path d="M150,52 L222,176 H78Z" fill="none" stroke="#c5ad83" stroke-width="1.2" opacity=".75"/>
+<path d="M150,60 C166,100 200,120 196,165 C193,200 170,222 150,222 C130,222 107,200 104,165 C101,138 120,124 128,98 C136,114 142,120 150,60Z" fill="#e0956a" opacity=".92"/>
+<path d="M150,100 C161,128 182,142 179,171 C177,196 163,210 150,210 C137,210 123,196 121,171 C119,152 134,142 139,124 C144,134 147,138 150,100Z" fill="#f2c27b"/>
+<path d="M150,148 C157,164 168,172 166,188 C165,200 157,206 150,206 C143,206 135,200 134,188 C133,177 143,170 150,148Z" fill="#fff1cf"/>
+<path d="M88,99 Q89.96,104.04 95,106 Q89.96,107.96 88,113 Q86.04,107.96 81,106 Q86.04,104.04 88,99Z" fill="#f4efe3"/><path d="M214,91 Q215.4,94.6 219,96 Q215.4,97.4 214,101 Q212.6,97.4 209,96 Q212.6,94.6 214,91Z" fill="#f4efe3"/><path d="M226,146 Q227.12,148.88 230,150 Q227.12,151.12 226,154 Q224.88,151.12 222,150 Q224.88,148.88 226,146Z" fill="#f4efe3"/><path d="M76,164 Q77.12,166.88 80,168 Q77.12,169.12 76,172 Q74.88,169.12 72,168 Q74.88,166.88 76,164Z" fill="#f4efe3"/><path d="M176,54 Q177.12,56.88 180,58 Q177.12,59.12 176,62 Q174.88,59.12 172,58 Q174.88,56.88 176,54Z" fill="#f4efe3"/>
+
+</svg>
